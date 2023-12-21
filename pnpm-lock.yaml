@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  date-fns:
+    specifier: ^3.0.5
+    version: 3.0.5
+
 devDependencies:
   '@types/node':
     specifier: ^20.10.5
@@ -229,6 +234,10 @@ packages:
     dependencies:
       undici-types: 5.26.5
     dev: true
+
+  /date-fns@3.0.5:
+    resolution: {integrity: sha512-Q4Tq5c5s/Zl/zbgdWf6pejn9ru7UwdIlLfvEEg1hVsQNQ7LKt76qIduagIT9OPK7+JCv1mAKherdU6bOqGYDnw==}
+    dev: false
 
   /esbuild@0.19.10:
     resolution: {integrity: sha512-S1Y27QGt/snkNYrRcswgRFqZjaTG5a5xM3EQo97uNBnH505pdzSNe/HLBq1v0RO7iK/ngdbhJB6mDAp0OK+iUA==}

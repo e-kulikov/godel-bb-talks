@@ -8,6 +8,10 @@
   "engines": {
     "node": ">=20.0.0"
   },
+  "scripts": {
+    "dev:2023-12-21": "tsx watch 2023-12-21_reduce",
+    "start:2023-12-21": "tsx 2023-12-21_reduce"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,5 +19,8 @@
     "@types/node": "^20.10.5",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "date-fns": "^3.0.5"
   }
 }
