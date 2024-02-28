@@ -26,6 +26,6 @@
 
     /*
         In TypeScript, there is much more elegant way to make the variable optional, using question mark before type assignment.
-        And don't be superstitious, any variable in JavaScript (superset of which TypeScript is) is `undefined` by default.
+        Don't be superstitious, any variable in JavaScript (superset of which TypeScript is) is `undefined` by default.
     */
 }

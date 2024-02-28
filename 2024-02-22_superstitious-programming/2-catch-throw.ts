@@ -22,7 +22,5 @@ declare function saveQuotes(quotes: any): void;
                 saveQuotes(quotes)
             })
 
-    /*
-        Don't be superstitious, if you are not going to process the error somehow (log, enrich or trace it), don't catch-throw error
-    */
+    // Don't be superstitious, if you are not going to process the error somehow (log, enrich, etc.), don't catch-throw error
 }
