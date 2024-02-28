@@ -33,7 +33,7 @@ declare function validateToken(token: string): Promise<boolean>;
         If you declare that a function doesn't return anything (void), it's better not to use `return` inside,
         especially if you are not going to use `early return` pattern (that is not the case here).
 
-        Don't be superstitious, express doesn't require calling `next()` implicitly.
+        Don't be superstitious, express doesn't require calling `next()` explicitly.
         You need to do that only when you want to call the next middleware by condition as an early return case,
         or if you want to call error handler middleware.
     */
