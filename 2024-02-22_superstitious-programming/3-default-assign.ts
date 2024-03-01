@@ -1,5 +1,5 @@
+// before
 {
-    // before
     class HTTPError extends Error {
         status: number;
         constructor(status: number, message: string | undefined = undefined) {
@@ -14,8 +14,8 @@
     */
 }
 
+// after
 {
-    // after
     class HTTPError extends Error {
         status: number;
         constructor(status: number, message?: string) {

@@ -2,8 +2,8 @@ type MiddlewareFunction = (req: Record<string, any>, res: unknown, next: (a?: Er
 class UnauthorizedError extends Error {}
 declare function validateToken(token: string): Promise<boolean>;
 
+// before
 {
-    // before
     const authenticate : MiddlewareFunction = async (req, res, next) => {
         try {
             const isValid = await validateToken(req.headers.Authorization);
@@ -13,13 +13,11 @@ declare function validateToken(token: string): Promise<boolean>;
         }
     };
 
-    /*
-        Not a big problem, of course. But as much code you write, as many problems you'll have in the future, during refactoring.
-     */
+    // Not a big problem, of course. But as much code you write, as many problems you'll have in the future, during refactoring.
 }
 
+// after
 {
-    // after
     const authenticate : MiddlewareFunction = async (req, res, next)  => {
         try {
             const isValid = await validateToken(req.headers.Authorization);
